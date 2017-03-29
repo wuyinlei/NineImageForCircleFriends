@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NineImageForCircleFriends</string>
+    <string name="zan_past">赞</string>
+    <string name="demo">哈哈哈哈，我这个是朋友圈的demo啊</string>
 </resources>

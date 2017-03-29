@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:clipChildren="false"
+                android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp"
+        tools:text="40分钟前"/>
+
+
+    <RelativeLayout
+        android:id="@+id/view_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/view_zan">
+
+        <Button
+            android:id="@+id/bt_comment"
+            android:layout_width="19dp"
+            android:layout_height="19dp"/>
+
+        <TextView
+            android:id="@+id/tv_attention_comment"
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/bt_comment"
+            android:gravity="center"
+            android:text="99"
+            android:textColor="#b4b4b4"
+            android:textSize="11sp"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/tv_topic_comment_count_more"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tv_attention_comment"
+            android:text="+"
+            android:textColor="#b4b4b4"
+            android:textSize="9sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_zan"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_attention_zan_count"
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/bt_zan"
+            android:gravity="center"
+            android:text="99"
+            android:textColor="#b4b4b4"
+            android:textSize="11sp"
+            android:visibility="visible"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_topic_zan_count_more"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tv_attention_zan_count"
+            android:text="+"
+            android:textColor="#b4b4b4"
+            android:textSize="9sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_zan_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_zan_animation"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:visibility="invisible"
+            android:padding="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_attention_zan_count_animation"
+            android:layout_width="15dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/bt_zan_animation"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#b4b4b4"
+            android:textSize="11sp"
+            android:visibility="invisible"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_animation_add"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tv_attention_zan_count_animation"
+            android:text="+"
+            android:visibility="gone"
+            android:textColor="#b4b4b4"
+            android:textSize="9sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/view_zan_animation"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="19dp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:gravity="center">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/bt_zan_animation"-->
+    <!--android:layout_width="19dp"-->
+    <!--android:layout_height="19dp"-->
+    <!--android:background="@mipmap/food_tab_good"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_attention_zan_count_animation"-->
+    <!--android:layout_width="15dp"-->
+    <!--android:layout_height="16dp"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--android:layout_marginTop="3dp"-->
+    <!--android:layout_toRightOf="@+id/bt_zan_animation"-->
+    <!--android:text="+"-->
+    <!--android:textColor="#b4b4b4"-->
+    <!--android:textSize="11sp"-->
+    <!--android:visibility="gone"-->
+
+    <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/tv_zan_past"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@id/view_comment"
+        android:text="@string/zan_past"
+        android:textColor="#ad8748"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

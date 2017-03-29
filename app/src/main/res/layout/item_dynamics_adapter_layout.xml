@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/look_more_content_re"
+                android:layout_marginTop="8dp"
+                android:clipChildren="false"
+                android:background="#ffffff">
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="56dp"
+        android:textSize="18sp"
+        android:id="@+id/tv_name"
+        android:gravity="center"
+        android:text="@string/demo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+
+    <com.mingchu.nineimageforcirclefriends.nineimage.NineGridView
+        android:id="@+id/nineGrid"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>
