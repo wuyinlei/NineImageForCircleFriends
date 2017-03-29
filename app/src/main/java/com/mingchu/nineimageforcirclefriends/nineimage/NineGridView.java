@@ -94,8 +94,6 @@ public class NineGridView extends ViewGroup {
             width = gridWidth * columnCount + gridSpacing * (columnCount - 1) + getPaddingLeft() + getPaddingRight();
             height = gridHeight * rowCount + gridSpacing * (rowCount - 1) + getPaddingTop() + getPaddingBottom();
 
-            if (mImageInfo.size() == 2)
-                height = height / 2;
         }
         setMeasuredDimension(width, height);
     }
@@ -144,9 +142,12 @@ public class NineGridView extends ViewGroup {
         columnCount = 3;
         //grid模式下，显示4张使用2X2模式
         if (mode == MODE_GRID) {
-            if (imageCount == 4 || imageCount == 2) {
+            if (imageCount == 4) {  //当有四张的时候   显示两行两列
                 rowCount = 2;
                 columnCount = 2;
+            } else if (imageCount == 2) {  //当有两张的时候显示一行两列
+                columnCount = 2;
+                rowCount = 1;
             }
         }
 
